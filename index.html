@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/logo/fabicon.png" type="image/x-icon">
+    <title>News & system </title>
+</head>
+
+<body id="dark_toggle">
+    <nav>
+        <div class="main-nav container flex">
+            <a onclick="reload()" href="#" class="company-logo ">
+                <video src="./logo/AJ.mp4" autoplay loop muted alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-items" id="ipl" onclick="onNavItemClick('ipl')">Cricket</li>
+                    <li class="hover-links nav-items" id="Technology" onclick="onNavItemClick('Technology')">Technology
+                    </li>
+                    <li class="hover-links nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-links nav-items" id="android" onclick="onNavItemClick('android')">Android</li>
+                    <li class="hover-links nav-items" id="android" onclick="onNavItemClick('react-native')">react-native
+                    </li>
+                    <li class="hover-links nav-items" id="android" onclick="onNavItemClick('jobs')">Jobs
+                    </li>
+                    <li class="hover-links nav-items" id="android" onclick="onNavItemClick('javascript')">javascript
+                    </li>
+                    <li class="hover-links nav-items" id="android" onclick="onNavItemClick('stocks-market')">
+                        stocks-market
+                    </li>
+
+
+
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" id="search-text" class="news-input" placeholder=" example: Patronics ">
+                <button id="search-button" class="search-button">search</button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+        <div class="card-container container flex" id="cards-container">
+
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is The Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 30/12/2023</h6>
+                <p class="News-Desc" id="News-Desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                    accusantium
+                    nemo voluptatem dolor quos laudantium debitis nesciunt, quis alias rerum.</p>
+
+            </div>
+        </div>
+
+    </template>
+
+
+    <hr>
+    <section>
+        <div id="particles-js">
+            <footer>
+                <h1>just experiment</h1>
+                <!-- <div class=" footer-container">
+                    <a href="#" class="company-logo">
+                        <video src="./logo/AJ.mp4" muted loop autoplay alt="company-logo">
+                    </a> -->
+            </footer>
+        </div>
+
+
+
+
+
+
+
+        <!-- //particle        -->
+  
+
+
+    </section>
+
+
+</body>
+<script src="index.js"></script>
+<!-- <script src="particles.js"></script>
+<script src="app.js"></script> -->
+
+
+</html>
